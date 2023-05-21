@@ -13,3 +13,6 @@
 #    "alacritty",
 #    "bitwarden"
 #  ],
+# Install fonts
+# curl -LO https://github.com/ryanoasis/nerd-fonts/releases/download/v3.0.1/JetBrainsMono.zip
+

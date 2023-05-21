@@ -1,6 +1,3 @@
-export ZSH="$HOME/.oh-my-zsh"
-export PATH="$HOME/.local/share/google-cloud-sdk/bin:$PATH"
-
 ZSH_THEME="custom"
 
 setopt auto_menu
@@ -16,4 +13,3 @@ plugins=(fzf)
 source $ZSH/oh-my-zsh.sh
 
 eval "$(fnm env)"
-

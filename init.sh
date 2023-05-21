@@ -38,8 +38,16 @@ make_home_symlink() {
   log "symlink for $dotfile_path has been created!"
 }
 
-dotfiles=".gitconfig .zshenv"
+mkdir $HOME/.config
+
+dotfiles=".gitconfig .zshenv .config/alacritty .config/tmux .config/nvim .config/zsh"
 for dotfile in $dotfiles; do
     make_home_symlink "$dotfile"
 done
 
+if [[ ! -f ~/.gitcredentials ]]; then
+  echo "Please don't forget to create and update your .gitcredentials file"
+  echo "Example:"
+  echo "git config --file ~/.gitcredentials user.name \"your_name\""
+  echo "git config --file ~/.gitcredentials user.email \"your@email.com\""
+fi
