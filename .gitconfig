@@ -1,0 +1,9 @@
+[core]
+	pager = "less -x5,9"
+	editor = "nvim"
+[pull]
+	rebase = false
+[push]
+	default = current
+[include]
+	path = ~/.gitcredentials
